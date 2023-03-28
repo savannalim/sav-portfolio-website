@@ -9,14 +9,26 @@
     <meta name="keywords" content="" />
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-    <!--Replace with your tailwind.css once created-->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <style>
+      .gradient-text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+      }
+    </style>
+
     <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
       html {
-        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", 
+        Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       }
     </style>
   </head>
@@ -28,62 +40,47 @@
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
     
    
-    <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Return</button>
+    <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl 
+    focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium 
+    rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Return</button>
     
 </a>
 </div>
 
         
-    <div class="flex flex-col px-20 pt-10 w-full py-10 pr-10 justify-center lg:items-start overflow-y-hidden">
+    <div class="flex flex-col px-20 pt-5 w-full py-10 pr-10 justify-center lg:items-start overflow-y-hidden">
 
-        
-        <p class="leading-normal text-base md:text-3xl font-bold text-white pt-10 mb-8 md:text-left">
-            Redesigning Auburn Green: </p>
-        <p class="leading-normal text-base md:text-2xl text-white mb-8 md:text-left">
-            User Research, User Interviews, Hand Drawing, Movement Flow Analysis, Landscape Architecture
-        </p>
-
-        <p class="leading-normal text-white text-base md:text-sm mb-8 md:text-left">
-            Ithaca, NY | 2019
-        </p>
+        <div class="container mx-auto flex flex-wrap py-8">
+            <div class="w-full max-h-full md:w-3/5 px-4 mb-4 md:mb-0">
+              <img src="landscapeimages/sections.jpeg" alt="landscape-header" class="w-full">
+            </div>
+            <div class="w-full md:w-2/5 px-4">
+              <h3 class="text-green-900 text-2xl font-bold mb-2">Redesigning Auburn Green:</h3>
+              <p class="text-green-800 mb-4">Auburn Green is a big, triangular-shaped plot of land in the middle of 
+                Ithaca that was in the middle of a commercial and residential hub. We believe it is being underused 
+                and undervalued, and that it can bring much more value to the neighborhood it lives in.</p>
+              <h3 class="text-green-900 text-xl font-bold mb-2">Role: Urban Designer</h3>
+              <p class="text-green-800 mb-4"> Experiences: User Research, User Interviews, Hand Drawing, Movement Flow Analysis, Landscape Architecture </p>
+              <h3 class="text-green-800 text-xl font-bold mb-2">Approach:</h3>
+              <p class="text-green-900 mb-4"> I wanted to study several things in the park: movement, traffic, bodies, businesses around the park, and topography.
+                In the process images below, you'll see that I studied and theorized the movement of peoples' bodies through the park
+                with different design approaches. I also interviewed local businesses and townspeople about the park's purpose, how
+                often they use the park, how safe they felt in the park, and what would make them visit the park more. I also wanted
+                to know more about their problems and their biggest deterrent from entering the park.
+            </div>
 
 
 
     </div>
 
-    <div class="flex justify-center">
-        <hr class="my-8 w-3/5 border-gray-300" />
-      </div>
-      
-
-
-    <div class="flex flex-col px-20 pb-10 w-full py-10 pr-10 justify-center lg:items-start overflow-y-hidden">
-
-    <p class="leading-normal text-base md:text-xl mb-8 md:text-left">
-        Context: </p>
-     <p class="leading-normal text-base md:text-sm mb-8 md:text-left"> 
-        Auburn Green is a big, triangular-shaped plot of land in the middle of Ithaca that was in the middle
-        of a commercial and residential hub. We believe it is being underused and undervalued, and that it can bring much more value 
-        to the neighborhood it lives in.
-    </p>
-
-    <p class="leading-normal text-base md:text-xl mb-8 md:text-left">
-        Approach: </p>
-     <p class="leading-normal text-base md:text-sm mb-8 md:text-left"> 
-        I wanted to study several things in the park: movement, traffic, bodies, businesses around the park, and topography.
-        In the process images below, you'll see that I studied and theorized the movement of peoples' bodies through the park
-        with different design approaches. I also interviewed local businesses and townspeople about the park's purpose, how
-        often they use the park, how safe they felt in the park, and what would make them visit the park more. I also wanted
-        to know more about their problems and their biggest deterrent from entering the park.
-    </p>
 
 
 
 <div>
-        <h1 class="my-4 text-xl md:text-xl text-blue-100 opacity-100 leading-tight 
+        <h3 class="my-4 text-xl md:text-xl text-bold text-blue-900 opacity-100 leading-tight 
         items-center text-center md:text-center">
      Process Images:
-      </h1>
+      </h3>
     
 
 <div class="grid gap-4" px-10 >
